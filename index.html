@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "container">
+        <h1 id="title">PC OS Survey</h1>
+        <p id="description">What is your favorite OS?</p>
+        <form id="survey-form">
+            <div class="form-control">
+                <label id="name-label"> Name:
+                    <input id="name" type="text"  placeholder="Enter your name" required />
+                </label>
+            </div>
+
+            <div class="form-control">
+                <label id="email-label"> Email:
+                    <input id="email" type="text" placeholder="Enter your email" required />
+                </label>
+            </div>
+            
+            <div class="form-control">
+                <label id="id-label"> Age:
+                 <input id="number" placeholder="Age" type="number" min="0" max="200" />
+                </label>
+            </div>
+
+            <div class="form-control">
+                <p> What is your occupation?</p>
+                <select id="dropdown">
+                    <option>Student</option>
+                    <option>Tech-related field</option>
+                    <option>Not tech-related field</option>
+                </select>
+            </div>
+            
+            <div class="form-control">
+                <p>What is your preferred OS?</p>
+                <label id="windows-label"> Windows
+                    <input type="radio" name="radio-group" value="windows" />
+                </label>
+
+                <label id="macOS-label"> MacOS
+                    <input type="radio" name="radio-group" value="macOS" />
+                </label>
+
+                <label id="linux-label"> Linux
+                    <input type="radio" name="radio-group" value="linux" />
+                </label>
+            </div>
+
+            <div class="form-control">
+                 <p>What do you use your computer for?</p>
+                <label> Cost
+                <input type="checkbox" value="Cost" />
+                </label>
+
+                <label> Coding
+                <input type="checkbox" value="Coding" />
+                </label>
+                
+                <label>Apps
+                <input type="checkbox" value="Apps" />
+                </label>
+                
+                <label>Gaming
+                <input type="checkbox" value="Gaming" />
+                </label>
+
+                <label>Security
+                <input type="checkbox" value="Security" />
+                </label>
+            </div>
+
+            <div class="form-control">
+                <textarea></textarea> 
+            </div>
+
+            <div class="form-control">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>  
+</body>
+</html>
